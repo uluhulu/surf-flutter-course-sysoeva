@@ -76,7 +76,4 @@ void task5(){
  So if she sells seashells on the seashore,
  Then I am sure she sells seashore shells.""";
   print(s.split(" ").length);
-
-
-
 }
