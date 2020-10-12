@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/2-2-base_syntax/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/2-2-base_syntax/build" />
+      <excludeFolder url="file://$MODULE_DIR$/2-3-types_of_data_in_dart/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/2-3-types_of_data_in_dart/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/2-3-types_of_data_in_dart/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

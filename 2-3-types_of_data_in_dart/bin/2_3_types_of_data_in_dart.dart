@@ -1,10 +1,10 @@
 import 'dart:math';
 
 void main() {
-  task1();
-  task2();
+  // task1();
+  // task2();
   //task3();
-  //task4();
+  task4();
   //task5();
 }
 
@@ -12,7 +12,7 @@ void task1() {
   /*a*/
   Random random = new Random();
   int randomNumber = random.nextInt(10);
-  if (randomNumber % 2 == 0)
+  if (randomNumber.isEven)
     print('${randomNumber} - Четное');
   else
     print("${randomNumber} - Нечетное");
