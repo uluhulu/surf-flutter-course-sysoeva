@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 void main() {
-  task4();
+  task3();
 }
 
 void task1(int month) {
@@ -37,26 +37,29 @@ void task2() {
   for (var i = 0; i <= 100; i += 2) print(i);
 }
 
-void task3(){
+void task3() {
   var sum = 0;
   while (true) {
     var input = stdin.readLineSync(encoding: Encoding.getByName("utf-8"));
-    if (input.toString() == "stop")
-      break;
-    sum += int.parse(input);
+    if (input.toString() == "stop") break;
+    var inputNum = int.tryParse(input);
+    if (inputNum != null) {
+      sum += inputNum;
+      print(sum);
+    } else
+      print("error ");
   }
-  print(sum);
-
 }
 
-void task4(){
-var stroke = """She sells seashells by the seashore The shells she sells are seashells I'm sure So if she sells seashells on the seashore Then I'm sure she sells seashore shells""".toLowerCase();
-print(stroke);
-var list = stroke.split(" ");
-print(list.length);
-var set = list.toSet();
+void task4() {
+  var stroke =
+      """She sells seashells by the seashore The shells she sells are seashells I'm sure So if she sells seashells on the seashore Then I'm sure she sells seashore shells"""
+          .toLowerCase();
+  print(stroke);
+  var list = stroke.split(" ");
+  print(list.length);
+  var set = list.toSet();
 //В задачке нужно просто высести длину сета.
 // В задаче сказано, что нужно сравнить кол-во элементов в массиве(листе) и множестве(сете).
-print("Кол-во повторяющихся слов: ${set.length}");
-
+  print("Кол-во повторяющихся слов: ${set.length}");
 }
